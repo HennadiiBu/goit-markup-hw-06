@@ -414,6 +414,18 @@
             </li>
           </ul>
         </div>
+        <form action="" name="subscription" class="form-subscription">
+          <label for="" class="user-email-sub"> підпишітся на розсилку </label>
+          <div class="box-input-sub">
+            <input type="email" name="email-sub" placeholder="E-mail" class="input-email" />
+            <button class="subscibe-sub" type="submit">
+              Підписатися
+              <svg class="icon-send" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -423,6 +435,22 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form action="" name="form-сontacts" class="form-сontacts">
+          <h2>Залиште свої дані, ми вам передзвонимо</h2>
+          <label for="user">Ім'я</label>
+          <input type="text" name="user-name" id="user" autofocus />
+          <label for="phone">Телефон</label>
+          <input type="tel" name="user-phone" id="phone" />
+          <label for="email">Пошта</label>
+          <input type="email" name="user-email" id="email" />
+          <label for="user-coment">Коментар</label>
+          <textarea name="user-comment" id="user-coment" placeholder="Введіть текст"></textarea>
+          <label for="agree-politic">
+            <input type="checkbox" name="politic" value="agree-politic" id="agree-politic" />
+            Погоджуюся з розсилкою та приймаю Умови договору
+          </label>
+          <button type="submit" class="send-but">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
