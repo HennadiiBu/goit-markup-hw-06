@@ -267,6 +267,9 @@ body {
 .adress {
   color: var(--main-background);
   font-style: normal;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 .button.primary {
@@ -631,7 +634,7 @@ body {
 
 .footer-social {
   display: inline-block;
-  margin-left: 70px;
+  margin-left: 93px;
 }
 
 .footer-social-text {
@@ -725,6 +728,8 @@ body {
 
 .close-button:hover {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-desc-overay {
@@ -812,12 +817,11 @@ body {
 .form-сontacts {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
 }
 
 .send-but {
-  margin: 30px auto 40px auto;
+  margin: 30px auto 0 auto;
   width: 200px;
   height: 50px;
   background: var(--accent-color);
@@ -836,7 +840,15 @@ body {
   cursor: pointer;
 }
 
+.send-but:hover,
+.send-but:focus {
+  background-color: var(--button-hero-active);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .label-icon {
+  pointer-events: none;
   position: absolute;
   top: 50%;
   left: 15px;
@@ -861,6 +873,8 @@ body {
 
 .input-field-name:focus + .label-icon {
   fill: var(--accent-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-field-name:focus {
@@ -890,8 +904,9 @@ body {
 
 .form-title {
   display: flex;
-  margin: 40px 0 12px 0;
+  margin-bottom: 12px;
   justify-content: center;
+  font-weight: 700;
   font-size: 20px;
   line-height: calc(23 / 20);
   letter-spacing: 0.03em;
